@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beautiful & Modern Salon</title>
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-pVn9M4b2N1PqaG+eV3N2aO1s5GqID3+6K6d6TQeVoHJoP5/hiVDs0Jxw71s2hecK7M+2bX7h6V6Q6A6gXcB2Tw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background: #fff;
+            color: #333;
+        }
+
+        header {
+            background: #ffb6c1;
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+
+        nav {
+            background: #333;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            display: inline-block;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            background: #ff69b4;
+        }
+
+        section {
+            padding: 40px 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #ff69b4;
+        }
+
+        .services, .prices, .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        .gallery img {
+            width: 100%;
+            height: 200px;       
+            object-fit: cover;   
+            border-radius: 10px;
+        }
+
+        .contact {
+            text-align: center;
+        }
+
+        .btn {
+            background: #ff69b4;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 10px;
+        }
+
+        footer {
+            background: linear-gradient(90deg, #ff69b4, #ffb6c1);
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            box-shadow: 0 -5px 10px rgba(0,0,0,0.1);
+        }
+
+        footer .footer-content p {
+            margin: 0 0 15px 0;
+            font-size: 16px;
+        }
+
+        footer .socials a {
+            margin: 0 12px;
+            font-size: 22px;
+            color: white;
+            transition: transform 0.3s, color 0.3s;
+        }
+
+        footer .socials a:hover {
+            transform: scale(1.3);
+            color: #ffebef;
+        }
+
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Beautiful & Modern Salon</h1>
+    <p>Where Beauty Meets Professional Care</p>
+    <a href="https://wa.me/6281234567890" class="btn" target="_blank">Book Now</a>
+</header>
+
+<nav>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#prices">Prices</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section id="about">
+    <h2>About Us</h2>
+    <p style="text-align:center;">
+        At Beautiful & Modern Salon, we provide premium hair and facial treatments using high-quality products in a relaxing and elegant environment. 
+        Our experienced stylists are dedicated to enhancing your natural beauty with personalized care and professional service.
+    </p>
+</section>
+
+<section id="services">
+    <h2>Our Services</h2>
+    <div class="services">
+        <div class="card">Professional Haircut</div>
+        <div class="card">Luxury Creambath & Hair Spa</div>
+        <div class="card">Premium Hair Coloring</div>
+        <div class="card">Deep Cleansing Facial</div>
+        <div class="card">Classic Manicure & Pedicure</div>
+        <div class="card">Professional Hair Styling</div>
+    </div>
+</section>
+
+<section id="prices">
+    <h2>Our Treatment Prices</h2>
+    <div class="prices">
+        <div class="card">Haircut<br><strong>Rp 35,000</strong></div>
+        <div class="card">Creambath<br><strong>Rp 50,000</strong></div>
+        <div class="card">Hair Coloring<br><strong>Rp 150,000</strong></div>
+        <div class="card">Facial<br><strong>Rp 80,000</strong></div>
+    </div>
+</section>
+
+<section id="gallery">
+    <h2>Gallery</h2>
+    <div class="gallery">
+        <img src="images/salon (1).jpg" alt="Professional Hair Style">
+        <img src="images/salon (2).jpg" alt="Modern Salon Interior">
+        <img src="images/salon (3).jpg" alt="Makeup Service">
+    </div>
+</section>
+
+<section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <p>📍 Jakarta, Indonesia</p>
+    <p>📱 WhatsApp: <a href="https://wa.me/6281234567877" target="_blank">Chat Now</a></p>
+    <p>🕒 Opening Hours: 09:00 AM – 07:00 PM (Daily)</p>
+</section>
+
+<footer>
+    <div class="footer-content">
+        <p> Beautiful & Modern Salon. Designed for elegance, built for beauty.</p>
+        <div class="socials">
+            <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
